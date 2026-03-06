@@ -4,7 +4,7 @@ body {
     font-family: Arial, sans-serif;
     display: grid;
     /* Two columns: Main takes 3 parts, Aside takes 1 part */
-    grid-template-columns: 3fr 1fr; 
+    grid-template-columns: 3fr 1fr;
     /* Three rows: Header, Main/Aside (flexible), and Footer */
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
@@ -12,7 +12,8 @@ body {
 
 /* Header Styles */
 header {
-    grid-column: 1 / -1; /* Spans across all columns */
+    grid-column: 1 / -1;
+    /* Spans across all columns */
     background-color: #333;
     color: white;
 }
@@ -28,8 +29,10 @@ nav {
 }
 
 nav ul {
-    display: flex; /* Use Flexbox for the menu items */
-    justify-content: space-around; /* Distribute items evenly */
+    display: flex;
+    /* Use Flexbox for the menu items */
+    justify-content: space-around;
+    /* Distribute items evenly */
     list-style: none;
     margin: 0;
     padding: 1rem 0;
@@ -55,7 +58,8 @@ aside {
 
 /* Footer Styles */
 footer {
-    grid-column: 1 / -1; /* Spans across all columns */
+    grid-column: 1 / -1;
+    /* Spans across all columns */
     background-color: #333;
     color: white;
     text-align: center;
