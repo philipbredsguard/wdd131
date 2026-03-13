@@ -1,34 +1,35 @@
-/* Header changes for large screens */
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-}
+@media (min-width: 768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
 
-.header-top {
-    padding: 1rem 0;
-}
+    /* Target the nav element specifically with flex */
+    nav {
+        display: flex !important;
+    }
 
-/* Hide hamburger button */
-#menu {
-    display: none;
-}
+    .header-top {
+        padding: 1rem 0;
+    }
 
-/* Show navigation as horizontal flexbox */
-.navigation {
-    display: flex !important;
-    /* overrides mobile JS inline display */
-    flex-direction: row;
-    align-items: center;
-}
+    #menu {
+        display: none;
+    }
 
-.navigation a {
-    padding: 1.5rem 1rem;
-}
+    .navigation {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+    }
 
-/* Grid changes for large screens (3 columns) */
-.gallery {
-    grid-template-columns: repeat(3, 1fr);
-    /* Alternatively, you can use: repeat(auto-fit, minmax(250px, 1fr)); */
+    .navigation a {
+        padding: 1.5rem 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
