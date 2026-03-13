@@ -1,0 +1,34 @@
+/* Header changes for large screens */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.header-top {
+    padding: 1rem 0;
+}
+
+/* Hide hamburger button */
+#menu {
+    display: none;
+}
+
+/* Show navigation as horizontal flexbox */
+.navigation {
+    display: flex !important;
+    /* overrides mobile JS inline display */
+    flex-direction: row;
+    align-items: center;
+}
+
+.navigation a {
+    padding: 1.5rem 1rem;
+}
+
+/* Grid changes for large screens (3 columns) */
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+    /* Alternatively, you can use: repeat(auto-fit, minmax(250px, 1fr)); */
+}
