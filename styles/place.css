@@ -1,8 +1,6 @@
 :root {
-    --primary-color: #d30731;
-    /* Madagascar Red */
-    --secondary-color: #007a33;
-    /* Madagascar Green */
+    --primary-color: rgb(43, 10, 10);
+    --secondary-color: #062c16;
     --accent-bg: rgba(255, 255, 255, 0.85);
     --font-main: 'Arial', sans-serif;
 }
@@ -87,7 +85,6 @@ footer p {
         right: 30px;
     }
 
-    /* Requirement: Weather Emoticon Pseudo-element */
     #weather-heading::after {
         content: " ⛅";
     }
