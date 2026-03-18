@@ -1,0 +1,32 @@
+@media (min-width: 800px) {
+    .hero-container {
+        position: relative;
+        /* Anchor for absolute children */
+    }
+
+    .card {
+        position: absolute;
+        background-color: var(--card-bg);
+        width: 250px;
+    }
+
+    .data {
+        top: 20px;
+        left: 20px;
+    }
+
+    .weather {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /* Requirement: Pseudo-element emoticon for Weather heading */
+    .weather h3::after {
+        content: " ⛅";
+    }
+
+    /* Hide the mobile SVG icon in desktop view if preferred */
+    .mobile-icon {
+        display: none;
+    }
+}

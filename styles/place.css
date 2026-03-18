@@ -1,0 +1,104 @@
+:root {
+    --primary-color: #d30731;
+    /* Madagascar Red */
+    --secondary-color: #007a33;
+    /* Madagascar Green */
+    --accent-bg: rgba(255, 255, 255, 0.85);
+    --font-main: 'Arial', sans-serif;
+}
+
+body {
+    font-family: var(--font-main);
+    margin: 0;
+    padding: 0;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+.mobile-only-icon {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .hero-wrapper {
+        position: relative;
+    }
+
+    .card {
+        position: absolute;
+        background-color: var(--accent-bg);
+        width: 250px;
+    }
+
+    .data {
+        top: 30px;
+        left: 30px;
+    }
+
+    .weather {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    /* Requirement: Weather Emoticon Pseudo-element */
+    #weather-heading::after {
+        content: " ⛅";
+    }
+
+    .mobile-only-icon {
+        display: none;
+    }
+
+}
+
+header, footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
+
+#hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card {
+    border: 1px solid #ccc;
+    background-color: var(--accent-bg);
+    margin: 0; 
+    padding: 0; 
+    text-align: center;
+}
+
+.card h2 {
+    background-color: var(--secondary-color);
+    color: white;
+    margin-top: 0;
+    padding: 0.5rem;
+}
+
+.card ul {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+}

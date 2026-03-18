@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Week 3 Assignment</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, Philip Bredsguard, Week 3 Assignment">
+    <meta name="author" content="Philip Bredsguard">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Madagascar</h1>
+    </header>
+    <main>
+        <div class="hero-wrapper">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 800px)">
+                <img src="images/hero-small.webp" alt="Lemur" id="hero-image" loading="lazy">
+            </picture>
+
+            <section class="card data">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area:</strong> 587,041 sq km</li>
+                    <li><strong>Population:</strong> 27,691,018</li>
+                    <li><strong>Captial:</strong> Antananarivo</li>
+                    <li><strong>Languges:</strong> Malagasy, French</li>
+                    <li><strong>Currency:</strong> Malagasy Ariary</li>
+                    <li><strong>Time Zone:</strong> UTC+3</li>
+                    <li><strong>Calling Code:</strong> +261</li>
+                    <li><strong>Internet TLD:</strong> .mg</li>
+                </ul>
+            </section>
+
+            <section class="card weather">
+                <h2 id="weather-heading">Weather</h2>
+                <div class="weather-content">
+                    <img src="images/weather-icon.svg" alt="Cloudy icon" class="mobile-only-icon">
+                    <p> <strong>Temperature:</strong><span id="temp">10</span>°C</p>
+                    <p> <strong>Conditions:</strong> Partly Cloudy</p>
+                    <p><strong>Wind:</strong> <span id="wind">5</span> km/h</p>
+                    <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Philip Bredsguard - Vero Beach, FL, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
