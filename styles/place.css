@@ -18,48 +18,10 @@ body {
     flex-direction: column;
 }
 
-.card {
-    padding: 1rem;
-    border: 1px solid #ddd;
-    margin: 10px;
-}
-
 .mobile-only-icon {
     width: 50px;
     display: block;
     margin: 0 auto;
-}
-
-@media (min-width: 800px) {
-    .hero-wrapper {
-        position: relative;
-    }
-
-    .card {
-        position: absolute;
-        background-color: var(--accent-bg);
-        width: 250px;
-    }
-
-    .data {
-        top: 30px;
-        left: 30px;
-    }
-
-    .weather {
-        bottom: 30px;
-        right: 30px;
-    }
-
-    /* Requirement: Weather Emoticon Pseudo-element */
-    #weather-heading::after {
-        content: " ⛅";
-    }
-
-    .mobile-only-icon {
-        display: none;
-    }
-
 }
 
 header,
@@ -102,4 +64,36 @@ footer p {
 
 .card li {
     margin-bottom: 0.5rem;
+}
+
+@media (min-width: 800px) {
+    .hero-wrapper {
+        position: relative;
+    }
+
+    .card {
+        position: absolute;
+        background-color: var(--accent-bg);
+        width: 250px;
+    }
+
+    .data {
+        top: 30px;
+        left: 30px;
+    }
+
+    .weather {
+        bottom: 30px;
+        right: 30px;
+    }
+
+    /* Requirement: Weather Emoticon Pseudo-element */
+    #weather-heading::after {
+        content: " ⛅";
+    }
+
+    .mobile-only-icon {
+        display: none;
+    }
+
 }
