@@ -16,7 +16,7 @@ img {
     /* Black background while loading */
 
     /* Animation settings */
-    animation: fadeFromBlack 2s ease-in-out;
+    animation: fadeFromBlack 8s ease-in-out;
 }
 
 /* Keyframes for fade-from-black */
