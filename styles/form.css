@@ -90,7 +90,7 @@ legend {
 
 .stars label {
     font-size: 2rem;
-    color: #ccc;
+    color: (--text-color);
     cursor: pointer;
     margin: 0;
 }
