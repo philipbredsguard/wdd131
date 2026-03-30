@@ -35,6 +35,23 @@ strong {
     color: var(--secondary-color);
 }
 
+.color-box-1 {
+    background-color: #0B1D33;
+    color: white;
+    padding: 10px
+}
+
+.color-box-2 {
+    background-color: #FF6B35;
+    padding: 10px;
+}
+
+.color-box-3 {
+    background-color: #F8F9FA;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
 .wireframe-container {
     max-width: 100%;
     margin: 20px 0;
