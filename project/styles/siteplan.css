@@ -5,8 +5,13 @@
     --bg-color: #F8F9FA;
 }
 
-body {
+body,
+p,
+li {
     font-family: 'Inter', sans-serif;
+}
+
+body {
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
