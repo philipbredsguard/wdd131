@@ -1,14 +1,14 @@
+/* -------------------------------------------
+   1. ROOT & GLOBAL STYLES
+------------------------------------------- */
 :root {
     --primary-color: #0B1D33;
     --secondary-color: #FF6B35;
     --text-color: #333;
     --bg-color: #F8F9FA;
-}
-
-body,
-p,
-li {
-    font-family: 'Inter', sans-serif;
+    --white: #ffffff;
+    --gray-light: #e0e0e0;
+    --gray-dark: #555;
 }
 
 body {
@@ -16,8 +16,12 @@ body {
     color: var(--text-color);
     line-height: 1.6;
     padding: 20px;
+    font-family: 'Inter', sans-serif;
 }
 
+/* -------------------------------------------
+   2. TYPOGRAPHY
+------------------------------------------- */
 h1,
 h2,
 h3 {
@@ -25,6 +29,12 @@ h3 {
     color: var(--primary-color);
     border-bottom: 2px solid var(--secondary-color);
     padding-bottom: 5px;
+    margin-top: 1.5em;
+}
+
+p,
+li {
+    font-family: 'Inter', sans-serif;
 }
 
 ul {
@@ -35,35 +45,46 @@ strong {
     color: var(--secondary-color);
 }
 
+/* -------------------------------------------
+   3. COLOR SCHEMA BOXES
+------------------------------------------- */
+.color-box-1,
+.color-box-2,
+.color-box-3 {
+    padding: 15px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
 .color-box-1 {
-    background-color: #0B1D33;
-    color: white;
-    padding: 10px
+    background-color: var(--primary-color);
+    color: var(--white);
 }
 
 .color-box-2 {
-    background-color: #FF6B35;
-    padding: 10px;
+    background-color: var(--secondary-color);
 }
 
 .color-box-3 {
-    background-color: #F8F9FA;
+    background-color: var(--bg-color);
     border: 1px solid #ccc;
-    padding: 10px;
 }
 
+/* -------------------------------------------
+   4. WIREFRAME SHARED STYLES
+------------------------------------------- */
 .wireframe-container {
     max-width: 100%;
     margin: 20px 0;
     font-family: Arial, sans-serif;
-    background: white;
+    background: var(--white);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .wf-block {
-    background: #e0e0e0;
-    border: 2px solid #555;
-    color: #333;
+    background: var(--gray-light);
+    border: 2px solid var(--gray-dark);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -74,26 +95,29 @@ strong {
     margin: 5px;
 }
 
-.wf-hero {
-    height: 150px;
-}
-
-.wf-text {
-    height: 50px;
-    margin: 5px;
-}
-
+/* -------------------------------------------
+   5. MOBILE WIREFRAME LAYOUT
+------------------------------------------- */
 .wf-mobile-container {
     display: flex;
     flex-direction: column;
     padding: 10px;
     max-width: 350px;
     margin: 0 auto;
-    border: 5px solid #333;
-    border-radius: 20px;
+    border: 8px solid #333;
+    /* Slightly thicker for a 'phone' look */
+    border-radius: 25px;
     background-color: #f0f0f0;
 }
 
+.wf-course {
+    background-color: #d0d0d0;
+    height: 50px;
+}
+
+/* -------------------------------------------
+   6. DESKTOP WIREFRAME LAYOUT
+------------------------------------------- */
 .wf-desktop-header,
 .wf-desktop-coursegrid {
     display: flex;
@@ -102,11 +126,33 @@ strong {
 }
 
 .wf-desktop-navlink {
-    width: 20%;
-    height: 20px;
+    width: 25%;
+    height: 25px;
 }
 
 .wf-desktop-coursegrid .wf-block {
-    width: 30%;
+    width: 32%;
     height: 100px;
+}
+
+/* Component Specific Heights */
+.wf-hero {
+    height: 150px;
+}
+
+.wf-text {
+    height: 50px;
+}
+
+.desktop-hero-height {
+    height: 250px;
+}
+
+.desktop-cta-height {
+    height: 80px;
+    border-color: var(--primary-color);
+}
+
+.wf-footer-height {
+    height: 60px;
 }
